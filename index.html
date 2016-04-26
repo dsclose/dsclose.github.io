@@ -2,7 +2,8 @@
 layout: default
 title: '@dsclose'
 cover: false
-about: 'about'
+#about: 'about'
+#logo: '/assets/images/profile.png'
 ---
 
 <header class="main-header {% if page.cover %}" style="background-image: url({{ page.cover }}) {%else%}no-cover{% endif %}">
@@ -16,7 +17,7 @@ about: 'about'
     </nav>
     <div class="vertical">
         <div class="main-header-content inner">
-            <h1 class="page-title">{{ site.name }}</h1>
+            <h1 class="page-title">{{ site.title }}</h1>
             <h2 class="page-description">
                 {% if site.description %} {{ site.description }}. {% endif %}
                 {% if page.about %} <a href='{{ site.baseurl }}{{ page.about }}'> About me </a> {% endif %}
