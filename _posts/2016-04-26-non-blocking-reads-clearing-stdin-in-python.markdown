@@ -1,13 +1,14 @@
 ---
 layout: post
-title: "Clearing stdin in Python without blocking program flow."
+title: "Non-Blocking Reads: Clearing stdin in Python."
 date:   2016-04-26
 categories: linux python
 ---
 
 It turns out that clearing stdin is made easy with Python's `select` module.
-If you're just interested in the code, [here's the Gist][gist].  Otherwise,
-let's work through it.
+We can use the that module's functionality to poll input streams to test
+whether I/O operations will block program flow. If you're just interested in
+the code, [here's the Gist][gist].  Otherwise, let's work through it.
 
 
 It began with a question...
