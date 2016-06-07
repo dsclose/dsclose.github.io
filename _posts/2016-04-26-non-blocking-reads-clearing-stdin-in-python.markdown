@@ -1,7 +1,9 @@
 ---
 layout: post
+uuid: "092f4cd0-2caa-11e6-84b9-080027859c3c"
 title: "Non-Blocking Reads: Clearing stdin in Python."
 date:   2016-04-26
+disqus: true
 categories: linux python
 ---
 
